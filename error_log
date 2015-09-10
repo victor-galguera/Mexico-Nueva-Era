@@ -1,0 +1,159 @@
+[04-Sep-2015 01:32:27 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('65376652855e93a...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[05-Sep-2015 17:42:04 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('154659795455eb6...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[06-Sep-2015 09:56:37 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('202516121355ec5...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[06-Sep-2015 12:54:12 America/Mexico_City] PHP Fatal error:  Unsupported operand types in /home/victoum6/public_html/mne/sites/all/modules/field_conditional_state/field_conditional_state.admin.inc on line 171
+[06-Sep-2015 12:58:52 America/Mexico_City] PHP Fatal error:  Unsupported operand types in /home/victoum6/public_html/mne/sites/all/modules/field_conditional_state/field_conditional_state.admin.inc on line 171
+[06-Sep-2015 12:59:12 America/Mexico_City] PHP Fatal error:  Unsupported operand types in /home/victoum6/public_html/mne/sites/all/modules/field_conditional_state/field_conditional_state.admin.inc on line 157
+[06-Sep-2015 12:59:16 America/Mexico_City] PHP Fatal error:  Unsupported operand types in /home/victoum6/public_html/mne/sites/all/modules/field_conditional_state/field_conditional_state.admin.inc on line 157
+[06-Sep-2015 12:59:30 America/Mexico_City] PHP Fatal error:  Unsupported operand types in /home/victoum6/public_html/mne/sites/all/modules/field_conditional_state/field_conditional_state.admin.inc on line 157
+[08-Sep-2015 12:01:53 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('66226214555ef14...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[08-Sep-2015 19:21:56 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('19502262055ef7b...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[09-Sep-2015 11:27:29 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('115484657455f05...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[09-Sep-2015 13:30:21 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('16364195555f07a...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[09-Sep-2015 17:34:12 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('200464080255f0b...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[09-Sep-2015 20:46:22 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('205116830755f0e...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[09-Sep-2015 23:11:05 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('2862768355f102d...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[10-Sep-2015 01:11:40 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('30341707255f11f...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[10-Sep-2015 01:11:40 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('58185824155f11f...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[10-Sep-2015 01:11:40 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('704303055f11f1c...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
+[10-Sep-2015 09:24:11 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/victoum6/public_html/mne/includes/database/database.inc:2171
+Stack trace:
+#0 /home/victoum6/public_html/mne/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/victoum6/public_html/mne/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/victoum6/public_html/mne/includes/database/query.inc(858): DatabaseConnection->query('DELETE FROM {se...', Array, Array)
+#3 /home/victoum6/public_html/mne/includes/lock.inc(269): DeleteQuery->execute()
+#4 [internal function]: lock_release_all('170246608655f19...')
+#5 /home/victoum6/public_html/mne/includes/bootstrap.inc(3472): call_user_func_array('lock_release_al...', Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+  thrown in /home/victoum6/public_html/mne/includes/database/database.inc on line 2171
