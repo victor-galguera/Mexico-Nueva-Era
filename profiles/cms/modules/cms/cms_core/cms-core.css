@@ -1,0 +1,38 @@
+/*
+ * Bootstrap 3 grid, with some modifications to play nice with Drupal and CKEditor
+ */
+
+img {
+  width: auto; /* Prevent squishing of large images in all themes */
+  height: auto;
+}
+.content img { /* This selector specifity should keep images in check but allow special circumstances like revolution slider image effects */
+  max-width: 100%;
+}
+
+.carousel img {
+  margin:0!important;
+}
+
+.cms-core-util-clear-both,
+.clear-both {
+  clear:both;
+}
+
+.cms-core-util-right,
+.clear-right {
+  clear: right;
+}
+
+.cms-core-util-left,
+.clear-left {
+  clear: left;
+}
+
+.cms-core-util-single-line {
+  height: 1.3em;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}

@@ -1,0 +1,7 @@
+
+; CMS Contact
+; -------
+
+dependencies[] = cms_contact
+dependencies[] = webform
+variables[pathauto_node_webform_pattern] = [node:title]

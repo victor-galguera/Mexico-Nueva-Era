@@ -1,0 +1,14 @@
+<?php
+
+	$blog_themes = array('black_premium', 'classic_blog', 'dark_elegant', 'deviant', 'professional_theme', 'splendio', 'touchpro');
+	$premium_themes = array('lumi', 'respondr');
+	if (in_array($cms_theme, $blog_themes)) {
+	$system_path = 'blog';
+	}
+	elseif (in_array($cms_theme, $premium_themes)) {
+	$system_path = _cms_get_node_path_for_uuid('d6b1dd5c-9212-4468-9a64-e6e674ca32b7');
+	}
+	else {
+	$system_path = _cms_get_node_path_for_uuid('d6b1dd5c-9212-4468-9a64-e6e674ca32b7');
+	}
+	variable_set('site_frontpage', $system_path);

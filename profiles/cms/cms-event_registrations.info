@@ -1,0 +1,6 @@
+
+; CMS Event Registrations
+; -------
+
+dependencies[] = cms_event_registrations
+dependencies[] = registration

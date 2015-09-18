@@ -1,0 +1,11 @@
+
+; CMS WYSIWYG
+; -------
+
+dependencies[] = cms_wysiwyg
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = wysiwyg
+dependencies[] = bs_shortcodes
+dependencies[] = sooperthemes_basic_elements
+dependencies[] = shortcode

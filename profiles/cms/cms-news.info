@@ -1,0 +1,7 @@
+
+; CMS News
+; -------
+
+dependencies[] = cms_news
+dependencies[] = media
+dependencies[] = media_internet

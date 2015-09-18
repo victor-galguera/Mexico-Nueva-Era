@@ -1,0 +1,175 @@
+<?php
+
+/**
+ * Implementation of hook_init().
+ */
+function sooperthemes_basic_elements_init() {
+  module_load_include('module', 'jsdelivr');
+  if (function_exists('jsdelivr_detect')) {
+    if (jsdelivr_detect('fontawesome') == FALSE) {
+      jsdelivr_add_css('fontawesome/4/css/font-awesome.min.css');
+    }
+  }
+
+  /**
+   * Azexo Composer integration assistance
+   */
+  if ((module_exists('azexo_composer')) && (user_access('edit via azexo composer'))) {
+    $colors = _sooperthemes_basic_elements_get_colors();
+    $palette = _sooperthemes_basic_elements_get_theme_setting('palette');
+    drupal_add_js("window.sooperthemes_colors = " . json_encode($colors) . ";", array('type' => 'inline'));
+    drupal_add_js("window.sooperthemes_theme_palette = " . json_encode($palette) . ";", array('type' => 'inline'));
+    drupal_add_js(drupal_get_path('module', 'sooperthemes_basic_elements') . '/includes/azexo-composer/sooperthemes-basic-elements-azexo.admin.js');
+  }
+}
+
+/**
+ * Implementation of hook_azexo_cms_element().
+ */
+function sooperthemes_basic_elements_azexo_composer_elements_folders_alter(&$azexo_elements_folders) {
+  global $base_url;
+  $azexo_elements_folders[] = array(
+    'folder' => dirname(__FILE__) . DIRECTORY_SEPARATOR . 'includes/azexo-composer/sidebar-elements',
+    'folder_url' => $base_url . '/' . drupal_get_path('module', 'sooperthemes_basic_elements') . '/includes/azexo-composer/sidebar-elements'
+  );
+  return $azexo_elements_folders;
+}
+
+/**
+ * Implementation of hook_preprocess_page().
+ */
+function sooperthemes_basic_elements_preprocess_page(&$variables) {
+  $path = drupal_get_path('module', 'sooperthemes_basic_elements');
+  drupal_add_css($path . '/css/sooperthemes-basic-elements.css');
+}
+
+/**
+* Implementation of hook_shortcode_info().
+* Using same formatting as hook_filter_info()
+*/
+function sooperthemes_basic_elements_shortcode_info() {
+  $shortcodes = array();
+
+  $shortcodes['fa-icon'] = array(
+    'title' => t('Font Awesome Icon'),
+    'description' => t('Font Awesome icon'),
+    'process callback' => 'sooperthemes_basic_elements_fa_icon',
+    'tips callback' => 'sooperthemes_basic_elements_fa_icon_tips',
+    'default settings' => array(),
+    'attributes callback' => 'sooperthemes_basic_elements_fa_icon_attributes',
+  );
+
+  $shortcodes['box'] = array(
+    'title' => t('Content box'),
+    'description' => t('Content boxes with optional icon support'),
+    'process callback' => 'sooperthemes_basic_elements_box',
+    'tips callback' => 'sooperthemes_basic_elements_box_tips',
+    'default settings' => array(),
+    'attributes callback' => 'sooperthemes_basic_elements_box_attributes',
+  );
+
+  $shortcodes['social'] = array(
+    'title' => t('Social links'),
+    'description' => t('Social links'),
+    'process callback' => 'sooperthemes_basic_elements_social',
+    'tips callback' => 'sooperthemes_basic_elements_social_tips',
+    'default settings' => array(),
+    'attributes callback' => 'sooperthemes_basic_elements_social_attributes',
+  );
+
+  $shortcodes['contact'] = array(
+    'title' => t('Contact information'),
+    'description' => t('Overview of contact information'),
+    'process callback' => 'sooperthemes_basic_elements_contact',
+    'tips callback' => 'sooperthemes_basic_elements_contact_tips',
+    'default settings' => array(),
+    'attributes callback' => 'sooperthemes_basic_elements_contact_attributes',
+  );
+
+  return $shortcodes;
+}
+
+$path = drupal_get_path('module', 'sooperthemes_basic_elements');
+require_once $path . '/includes/shortcodes/fa-icon.inc';
+require_once $path . '/includes/shortcodes/box.inc';
+require_once $path . '/includes/shortcodes/social.inc';
+require_once $path . '/includes/shortcodes/contact.inc';
+
+
+
+/**
+ * Retrieves the Color module information for a particular theme.
+ */
+function _sooperthemes_basic_elements_get_colors($theme = NULL) {
+  static $theme_info = array();
+  if (!isset($theme)) {
+    $theme = variable_get('theme_default', NULL);
+  }
+
+  if (isset($theme_info[$theme])) {
+    return $theme_info[$theme];
+  }
+
+  $path = drupal_get_path('theme', $theme);
+  $file = DRUPAL_ROOT . '/' . $path . '/color/color.inc';
+  if ($path && file_exists($file)) {
+    include $file;
+    $theme_info[$theme] = $info['fields'];
+    return $info['fields'];
+  } else {
+    return array();
+  }
+}
+
+
+
+/**
+ * Taken from adaptivetheme, changed to use default theme when theme unspecified
+ * Retrieve a setting for the current theme or for a given theme.
+ *
+ * AT's stripped down optimized version of theme_get_setting().
+ * Why? Because it wayfasterbetter, emphasis on the faster which is really the
+ * only valid reason to do something as stupid as this, and it is faster,
+ * considerably faster. Doing this wiped 100ms off page generation time.
+ *
+ * @param $setting_name
+ * @param null $theme
+ * @see http://api.drupal.org/api/drupal/includes!theme.inc/function/theme_get_setting/7
+ */
+function _sooperthemes_basic_elements_get_theme_setting($setting_name, $theme = NULL) {
+  $cache = &drupal_static(__FUNCTION__, array());
+
+  if (!isset($theme)) {
+   $theme = variable_get('theme_default', NULL);
+  }
+
+  if (empty($cache[$theme])) {
+
+    // Get the values for the theme-specific settings from the .info files
+    if ($theme) {
+      $themes = list_themes();
+      $theme_object = $themes[$theme];
+
+      // Create a list which includes the current theme and all its base themes.
+      if (isset($theme_object->base_themes)) {
+        $theme_keys = array_keys($theme_object->base_themes);
+        $theme_keys[] = $theme;
+      }
+      else {
+        $theme_keys = array($theme);
+      }
+
+      foreach ($theme_keys as $theme_key) {
+        if (!empty($themes[$theme_key]->info['settings'])) {
+          $cache[$theme] = $themes[$theme_key]->info['settings'];
+        }
+      }
+
+      // Get the saved theme-specific settings from the database.
+      $cache[$theme] = array_merge($cache[$theme], variable_get('theme_' . $theme . '_settings', array()));
+    }
+  }
+
+  return isset($cache[$theme][$setting_name]) ? $cache[$theme][$setting_name] : NULL;
+}
+

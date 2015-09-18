@@ -1,0 +1,22 @@
+# Spanish translation of CMS Powerstart News (7.x-1.0-beta46)
+# Copyright (c) 2015 by the Spanish translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CMS Powerstart News (7.x-1.0-beta46)\n"
+"POT-Creation-Date: 2015-08-11 06:26+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Title"
+msgstr "Título"
+msgid "Body"
+msgstr "Cuerpo"
+msgid "Attachments"
+msgstr "Adjuntos"
+msgid "News"
+msgstr "Noticias"

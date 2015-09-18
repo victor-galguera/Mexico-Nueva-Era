@@ -1,0 +1,14 @@
+name = SooperThemes Basic Elements
+description = Provides elements for basic styling including content boxes, icons, contact information, social links, dividers
+package = Shortcode
+core = 7.x
+dependencies[] = filter
+dependencies[] = jsdelivr
+package = SooperThemes Basic
+
+; Information added by Drupal.org packaging script on 2015-05-27
+version = "7.x-1.0-beta1"
+core = "7.x"
+project = "sooperthemes_basic_elements"
+datestamp = "1432738984"
+

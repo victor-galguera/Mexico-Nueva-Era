@@ -1,0 +1,11 @@
+
+; CMS Portfolio
+; -------
+
+dependencies[] = cms_portfolio
+dependencies[] = image_field_caption
+dependencies[] = image_url_formatter
+dependencies[] = libraries
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = views_bootstrap
